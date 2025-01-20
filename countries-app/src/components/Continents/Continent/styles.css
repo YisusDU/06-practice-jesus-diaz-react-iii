@@ -1,0 +1,61 @@
+
+.continentList{
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items: center;
+  gap: 15px;
+}
+.continentList h2{
+  text-align: left;
+  font-size: 30px;
+  display: inline;
+  width: 120px;
+}
+.continentList button{
+  width: 20px;
+  height: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.continentList button:active{
+  transition: all 0.3s ease;
+  scale: 0.95;
+}
+ul{
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  gap: 20px;
+  box-sizing: border-box;
+}
+
+li {
+  height: auto;
+  width: 100%;
+  padding: 10px;
+  letter-spacing: 10px;
+  box-sizing: border-box;
+  font-weight: 500;
+  transition: all 0.2s ease;
+}
+li:hover{
+  background-color: #f0f0f0;
+  scale: 1.01;
+  transition: all 0.2s ease;
+}
+span{
+  font-weight: bold;
+}
+
+.dark {
+  background-color: #b9b9b9; /* White */
+  color: #333333; /* Dark Gray */
+}
+
+.ligth {
+  background-color: #ffffff; /* Dark Blue */
+  color: #000000; /* Light Gray */
+}
+
