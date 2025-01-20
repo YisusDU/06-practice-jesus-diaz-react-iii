@@ -67,3 +67,27 @@ img {
   border-radius: 5px;
   border: 1px solid #000;
 }
+
+
+/*  Manejo de erroresy pantalla de carga*/
+
+.loading, .error {
+  font-size: 50px;
+  text-align: center;
+  background-color: rgba(204, 204, 204, 0.8); /* Fondo semitransparente */
+  width: 100vw;
+  height: 100vh; /* Cambiado a 100vh para cubrir toda la altura de la pantalla */
+  box-sizing: border-box;
+  position: fixed; /* Cambiado a fixed para cubrir toda la pantalla */
+  top: 0; /* Asegúrate de que empiece desde la parte superior */
+  left: 0; /* Asegúrate de que empiece desde la parte izquierda */
+  z-index: 100; /* Asegúrate de que esté por encima del contenido */
+  display: flex; /* Para centrar el contenido */
+  justify-content: center; /* Centrar horizontalmente */
+  align-items: center; /* Centrar verticalmente */
+  backdrop-filter: blur(5px); /* Efecto de desenfoque en el fondo */
+}
+
+.loading h2, .error h2 {
+  color: #000; /* Color del texto dentro de loading y error */
+}

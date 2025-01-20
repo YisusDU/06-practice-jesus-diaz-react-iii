@@ -1,7 +1,7 @@
 import React from "react";
 import useFilteredCountries from "../../hooks/useFilteredCountries.ts";
 import Header from "../Header/index.tsx";
-import "./styles.css"
+import "./styles.css";
 
 const CountryList = () => {
   const {
@@ -32,8 +32,19 @@ const CountryList = () => {
   };
 
   const renderContent = () => {
-    if (isLoading) return <p>Loading......................</p>;
-    if (error) return <p>Hubo un error al cargar los países</p>;
+    if (isLoading)
+      return (
+        <div className="loading">
+          <p >Loading...................... 🥱</p>
+        </div>
+      );
+    if (error)
+      return (
+        <div className="error">
+          <p >There was an error loading the countries. 😖</p>
+        </div>
+      );
+
     return renderCountries();
   };
 
